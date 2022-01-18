@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        /* 背景颜色 */
+        div {
+            width: 900px;
+            height: 900px;
+            /* background-color: transparent;默认 */
+            /* 背景图片>背景颜色 不要忘记url */
+            background-color: pink;
+            background-image: url(images/img.jpg);
+            /* 背景平铺 默认为平铺 */
+            /* 不平铺 */
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-y; */
+            /* 背景图片位置 */
+            /* 1. 参数是方位名词
+ 如果指定的两个值都是方位名词，则两个值前后顺序无关，比如 left top 和 top left 效果一致
+ 如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
+2. 参数是精确单位
+ 如果参数值是精确坐标，那么第一个肯定是 x 坐标，第二个一定是 y 坐标
+ 如果只指定一个数值，那该数值一定是 x 坐标，另一个默认垂直居中
+3. 参数是混合单位
+ 如果指定的两个值是精确单位和方位名词混合使用，则第一个值是 x 坐标，第二个值是 y 坐标 */
+            /* background-position: right center; */
+            /* background-position: 20px 50px; */
+            /* background-position: 20px; */
+            /* background-position: 20px center; */
+            background-position: center 20px;
+        }
+        /* 背景色半透明 */
+        .rgba {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="rgba"></div>
+</body>
+
+</html>

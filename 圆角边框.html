@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        .zuoyou {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+
+
+            /* 圆角边框 */
+            /* border-radius: 15px; */
+            border-radius: 75px;
+        }
+        .yuan {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* border-radius: 100px; */
+            /* 50%边长的一半 */
+            border-radius: 50%;
+        }
+        .radius {
+            width: 200px;
+            height: 200px;
+            /* 从左上顺时针 */
+            /* border-radius: 10px 20px 30px 40px; */
+
+            border-top-left-radius: 20px;
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div class="zuoyou"></div>
+    <div class="yuan"></div>
+    <div class="radius"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+        .nav {
+            height: 180px;
+            width: 170px;
+            background-color: pink;
+            /* padding复合写法 1个值 上下左右 2个值 上下和左右 3个值 上和左右和下 4个值 上和右和下和左（顺时针） */
+            padding: 5px 10px 15px 20px;
+            /* 会影响盒子大小 */
+        }
+        h1 {
+            height: 200px;
+            background-color: pink;
+            padding: 30px;
+        }
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+        }
+        div p {
+            padding: 30px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">盒子内容为content盒子内容为content盒子内容为content盒子内容为content盒子内容为content</div>
+    <h1>未设定width/height，padding不影响盒子大小</h1>
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>

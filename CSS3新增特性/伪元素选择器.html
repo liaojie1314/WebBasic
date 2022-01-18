@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+        /* 伪元素选择器权重为1 */
+        /* div::before权重为2 */
+        div::before {
+            display: inline-block;
+            /* content 必须要写 */
+            content: '我';
+            height: 30px;
+            width: 42px;
+            background-color: dimgray;
+        }
+        div::after {
+            content: '小猪佩奇';
+        }
+    </style>
+</head>
+<body>
+    <div>
+        是
+    </div>
+</body>
+</html>

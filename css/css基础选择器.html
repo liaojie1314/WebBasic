@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css基础选择器</title>
+    <style>
+        /* 给谁该样式{改什么} */
+        /* 标签选择器 */
+        p {
+            color: green;
+            font-size: 12px;
+        }
+        div {
+            color: salmon;
+            font-size: 20px;
+        }
+        /* 类选择器  样式点定义 结构类（class）调用 一个或多个 开发最常用
+        命名不要用标签名*/
+         .red {
+             color: red;
+         }
+        .song {
+            color: green;
+        }
+        /* 多类名使用 */
+        .yellow {
+            color: yellow;
+        }
+        .font35 {
+            font: 35px;
+        }
+        /* id选择器 样式#定义 结构id调用 只能调用一次 别人切勿调用 */
+        #pink {
+            color: pink;
+        }
+        /* 通配选择器 * {}把所有标签都改变 不需要调用
+        * {
+            margin: 0;
+            padding: 0;
+        } */
+    </style>
+</head>
+<body>
+    <p>有点意思</p>
+    <p>没有意思</p>
+    <div>我觉得没意思</div>
+
+    <ul>
+        <li class="red">冰雨</li>
+        <li class="red">来生缘</li>
+        <li>李香兰</li>
+        <li>生僻字</li>
+        <li class="song">江南style</li>
+    </ul>
+    <div class="red">我也想变红</div>
+    
+    <div class="yellow font35">刘德华</div>
+
+    <div id="pink">迈克尔</div>
+</html>

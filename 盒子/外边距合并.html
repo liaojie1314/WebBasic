@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距合并</title>
+    <style>
+        .damao,
+        .ermao {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 取大200px
+        解决方法只个一个设margin */
+        .damao {
+            margin-bottom: 100px;
+        }
+        .ermao {
+            margin-top: 200px;
+        }
+        /* 塌陷 */
+        .father {
+            margin-top: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+
+            /* 方法一 */
+            /* border: 1px solid transparent; */
+            /* 方法二 */
+            /* padding: 1px; */
+            /* 方法三 */
+            overflow: hidden;
+        }
+        .son {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="damao">大郎</div>
+    <div class="ermao">二郎</div>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

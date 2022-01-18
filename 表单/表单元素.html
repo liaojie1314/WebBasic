@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素</title>
+</head>
+<body>
+    <form action="xxx.php" method="get">
+        <label for="text">用户名：</label><input type="text" name="username" value="请输入用户名" maxlength="6" id="text"><br>
+        密码：<input type="password" name="password"><br>
+        性别：<label for="man">男</label> <input type="radio" name="sex" value="男" checked="checked" id="man"> <label for="woman">女</label><input type="radio" name="sex" value="女" id="woman"> <br>
+        爱好：吃饭 <input type="checkbox" name="hobby" checked="checked"> 睡觉 <input type="checkbox" name="hobby" checked="checked"> 打豆豆 <input type="checkbox" name="hobby"><br>
+        籍贯：<select>
+            <option>山东</option>
+            <option selected="selected">重庆</option>
+            <option>河南</option>
+            <option>河北</option>
+            <option>福建</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>天津</option>
+            <option>黑龙江</option>
+            <option>云南</option>
+            <option>新疆</option>
+            <option>陕西</option>
+            <option>广州</option>
+            <option>台湾</option>
+        </select>
+        反馈：
+        <textarea cols="30" rows="5">反馈留言 </textarea>
+        <input type="button" value="获取验证码"><input type="file"><br>
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重新填写">
+    </form>
+</body>
+</html>
